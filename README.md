@@ -230,15 +230,6 @@ Each topic has its own directory, and each problem is a standalone `.py` file na
 - [ ] Sum of Two Integers
 - [ ] Reverse Integer
 
-## Setup
-
-To generate the full directory structure with template files, run:
-
-```bash
-bash setup.sh
-```
-
-The script is idempotent: it will not overwrite existing solution files, so it is safe to run again after adding new problems.
 
 ## Solution Template
 
