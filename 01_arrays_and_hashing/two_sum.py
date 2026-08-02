@@ -15,7 +15,7 @@ Space Complexity: O()
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         seen: dict = {} #num -> index mapping
-        for idx, num in nums:
+        for idx, num in enumerate(nums):
             difference = target - num
             if difference in seen:
                 return [seen[difference],idx]
@@ -28,3 +28,6 @@ class Solution:
             dict get and put methods are O(1) expected time
             space is O(n) since in worst case target sum is not found
             '''
+
+sol = Solution()
+print(sol.twoSum([1,2,3,4,9], 11))
